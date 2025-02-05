@@ -23,7 +23,7 @@ const FormLogin = ({ getDataByRole, registerURLByRole, roleTitle }) => {
       // dispatch(getMeChild());
       navigate('/child/home');
     }
-  }, [isSuccess, success, parent, child]);
+  }, [isError, error]);
 
   const Auth = async (e) => {
     e.preventDefault();
