@@ -18,11 +18,11 @@ function ChildHome() {
     dispatch(getMeChild());
   }, [dispatch]);
 
-  useEffect(() => {
-    if (!child) {
-      navigate('/');
-    }
-  }, [child, navigate]);
+  // useEffect(() => {
+  //   if (!child) {
+  //     navigate('/');
+  //   }
+  // }, [child, navigate]);
 
   useEffect(() => {
     const options = {
