@@ -73,13 +73,13 @@ export const parentSlice = createSlice({
       state.isLoading = false;
       state.isSuccess = true;
       state.parent = action.payload;
-      localStorage.setItem('username', action.payload.username);
+      alert('Email atau password salah');
     });
     builder.addCase(loginParent.rejected, (state, action) => {
       state.isLoading = false;
       state.isError = true;
       state.message = action.payload;
-      alert('Email atau password salah');
+      localStorage.setItem('username', action.payload.username);
     });
 
     // Get parent login
