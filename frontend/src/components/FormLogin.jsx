@@ -15,15 +15,15 @@ const FormLogin = ({ getDataByRole, registerURLByRole, roleTitle }) => {
   const { child, success, loading, error } = useSelector((state) => state.child);
 
   useEffect(() => {
-    if (parent || (isError && roleTitle === 'Parent')) {
-      dispatch(getMeParent());
-      navigate('/parent/home');
-    }
-    if (child || (error && roleTitle === 'Child')) {
-      dispatch(getMeChild());
-      navigate('/child/home');
-    }
-  }, [isSuccess, success, parent, child]);
+    // if (parent || (isSuccess && roleTitle === 'Parent')) {
+    dispatch(getMeParent());
+    navigate('/parent/home');
+    // }
+    // if (child || (success && roleTitle === 'Child')) {
+    dispatch(getMeChild());
+    navigate('/child/home');
+    // }
+  }, []);
 
   const Auth = async (e) => {
     e.preventDefault();
