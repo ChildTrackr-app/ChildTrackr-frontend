@@ -36,8 +36,8 @@ const FormLogin = ({ getDataByRole, registerURLByRole, roleTitle }) => {
     try {
       const response = await axios.get(process.env.REACT_APP_linkNgrok + getDataByRole, {
         headers: {
-          'ngrok-skip-browser-warning': true,
-          Authorization: `${localStorage.getItem('token')}`
+          'ngrok-skip-browser-warning': true
+          // Authorization: `${localStorage.getItem('token')}`
         }
       });
     } catch (error) {

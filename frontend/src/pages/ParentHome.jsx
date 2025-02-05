@@ -78,7 +78,7 @@ const ParentHome = () => {
               longitude: newProfile.longitude.toString()
             },
             {
-              Authorization: `${localStorage.getItem('token')}`
+              // Authorization: `${localStorage.getItem('token')}`
             }
           );
 
@@ -91,7 +91,7 @@ const ParentHome = () => {
               longitude: newProfile.longitude.toString()
             },
             {
-              Authorization: `${localStorage.getItem('token')}`
+              // Authorization: `${localStorage.getItem('token')}`
             }
           );
 

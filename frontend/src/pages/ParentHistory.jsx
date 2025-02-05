@@ -49,7 +49,7 @@ function ParentHistory() {
       try {
         const response = await axios.get(process.env.REACT_APP_linkNgrok + '/history/data', {
           headers: {
-            Authorization: `${token}`
+            // Authorization: `${token}`
           }
         });
 

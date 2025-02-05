@@ -30,7 +30,7 @@ function ParentNotification() {
       try {
         const response = await axios.get(process.env.REACT_APP_linkNgrok + '/notif/data', {
           headers: {
-            Authorization: `${token}`
+            // Authorization: `${token}`
           }
         });
         setNotificationHistory(response.data);

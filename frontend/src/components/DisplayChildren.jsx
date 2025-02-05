@@ -14,8 +14,8 @@ const DisplayChildren = ({ children, setChildren, urlPath }) => {
     await axios
       .get(process.env.REACT_APP_linkNgrok + '/user/userProfiles', {
         headers: {
-          'ngrok-skip-browser-warning': true,
-          Authorization: `${localStorage.getItem('token')}`
+          'ngrok-skip-browser-warning': true
+          // Authorization: `${localStorage.getItem('token')}`
         }
       })
       .then((response) => {
