@@ -16,11 +16,11 @@ const FormLogin = ({ getDataByRole, registerURLByRole, roleTitle }) => {
 
   useEffect(() => {
     if (isError && roleTitle === 'Parent') {
-      dispatch(getMeParent());
+      // dispatch(getMeParent());
       navigate('/parent/home');
     }
     if (error && roleTitle === 'Child') {
-      dispatch(getMeChild());
+      // dispatch(getMeChild());
       navigate('/child/home');
     }
   }, [isSuccess, success, parent, child]);
