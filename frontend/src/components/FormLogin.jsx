@@ -19,11 +19,11 @@ const FormLogin = ({ getDataByRole, registerURLByRole, roleTitle }) => {
       // dispatch(getMeParent());
       navigate('/parent/home');
     }
-    if (error && roleTitle === 'Child') {
+    if (success && roleTitle === 'Child') {
       // dispatch(getMeChild());
       navigate('/child/home');
     }
-  }, [isError, error]);
+  }, [isError, success]);
 
   const Auth = async (e) => {
     e.preventDefault();
