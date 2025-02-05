@@ -15,9 +15,9 @@ const ParentGeofencingHistory = () => {
     dispatch(getMeParent());
   }, [dispatch]);
 
-  useEffect(() => {
-    if (!parent) navigate('/');
-  }, [parent, navigate]);
+  // useEffect(() => {
+  //   if (!parent) navigate('/');
+  // }, [parent, navigate]);
 
   return (
     <Layout roleTitle="Parent">

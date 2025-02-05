@@ -29,11 +29,11 @@ const ParentSchedule = () => {
     dispatch(getMeParent());
   }, [dispatch]);
 
-  useEffect(() => {
-    if (!parent) {
-      navigate('/');
-    }
-  }, [parent, navigate]);
+  // useEffect(() => {
+  //   if (!parent) {
+  //     navigate('/');
+  //   }
+  // }, [parent, navigate]);
 
   const updateGeofenceData = async () => {
     const newStartTime = getHoursMinutes(startTime);

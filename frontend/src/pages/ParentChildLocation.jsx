@@ -25,11 +25,11 @@ function LokasiAnak() {
     dispatch(getMeParent());
   }, [dispatch]);
 
-  useEffect(() => {
-    if (isError) {
-      navigate('/');
-    }
-  }, [isError, navigate]);
+  // useEffect(() => {
+  //   if (isError) {
+  //     navigate('/');
+  //   }
+  // }, [isError, navigate]);
 
   const getUsers = async () => {
     axios
