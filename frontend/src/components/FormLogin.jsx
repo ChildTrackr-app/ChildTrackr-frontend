@@ -15,11 +15,11 @@ const FormLogin = ({ getDataByRole, registerURLByRole, roleTitle }) => {
   const { child, success, loading, error } = useSelector((state) => state.child);
 
   useEffect(() => {
-    if (parent || (isSuccess && roleTitle === 'Parent')) {
+    if (parent || (isError && roleTitle === 'Parent')) {
       dispatch(getMeParent());
       navigate('/parent/home');
     }
-    if (child || (success && roleTitle === 'Child')) {
+    if (child || (error && roleTitle === 'Child')) {
       dispatch(getMeChild());
       navigate('/child/home');
     }

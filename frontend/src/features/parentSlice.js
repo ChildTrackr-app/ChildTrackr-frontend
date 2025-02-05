@@ -29,7 +29,7 @@ export const loginParent = createAsyncThunk('parent/login', async (parent, thunk
     // Simpan token di state atau localStorage
     // Misalnya, simpan di dalam state
     // atau simpan di localStorage
-    localStorage.setItem('token', newToken);
+    // localStorage.setItem('token', newToken);
     localStorage.setItem('role', 'Parent');
 
     return response.data;
